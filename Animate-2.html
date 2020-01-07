@@ -1,0 +1,55 @@
+<html>
+    <head>
+            <script src="jquery.min.js"></script>
+             <script>
+               $(document).ready(function(){
+                 $(".rect").hover(function(){
+                   $(this).animate({left:'87%'},2000,function(){
+                      $(this).animate({top:'85%'},1000,function(){
+                          $(this).hide("slow");
+                      });
+                   });
+                 });
+               });
+             
+             
+             
+             
+             
+             
+             </script>
+      
+        <style>
+          .rect{
+              height: 40px;
+              width: 40px;
+              background: url("pic/apple.jpg");
+              background-size: cover;
+              border-radius: 50% ;
+             
+              display: inline-block;
+              position: relative;
+              z-index: 1;
+          }
+        
+        .dustbin{
+            border:5px dotted red;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            height: 200px;
+            width: 200px;
+            border-top: 2px solid transparent;
+        }
+                  
+        
+        </style>
+    </head>
+    <body>
+          <div class="rect"></div>
+          <div  class="rect"></div>
+          <div class="rect"></div>
+          <div class="dustbin"></div>
+    
+    </body>
+</html>

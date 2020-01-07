@@ -1,0 +1,27 @@
+<html>
+    <head>
+            <script src="jquery.min.js"></script>   
+
+        <script>
+          $(document).ready(function(){
+              $("button").click(function(){
+                  console.log($("#pass").attr('type'));
+                  console.log($("#pass").val());
+                  console.log($("#label").prop('style').color);
+                  console.log($("#label").text());
+                  console.log($("#label").html());
+              });
+          });
+        
+        
+        </script>
+
+    </head>
+    <body>
+        <div style="color: red;" id="label">
+          Password
+        </div>
+        <input type="password" id="pass">
+        <button>Check Attribut Method</button>
+    </body>
+</html>

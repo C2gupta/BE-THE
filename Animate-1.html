@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+        #rect{
+            height: 30px;
+            width: 30px;
+            border: 1px solid blue;
+            background: red;
+            position: relative;
+        }
+        
+        
+        </style>
+
+            <script src="jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#rect").hover(function(){
+                    $("#rect").animate({left:'95%'},2000,function(){
+                        $("#rect").animate({top:'90%'},2000,function(){
+                            $("#rect").animate({left:'0%'},2000,function(){
+                                $("#rect").animate({top:'0%'},2000);
+                            });
+                        })
+                    });
+                 });
+            });
+        
+        
+        
+        </script>
+
+    </head>
+    <body>
+        <div id="rect"></div>
+    </body>
+</html>
